@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" href="LOGO.ico">
+    <style>
+        .aboutus-page {
+            background-color: #fdf6ec;
+            font-family: 'Segoe UI', sans-serif;
+            padding-bottom: 60px;
+        }
+
+        .slider-container {
+            width: 90%;
+            max-width: 600px;
+            overflow: hidden;
+            margin: 40px auto;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        .slider {
+            display: flex;
+            animation: slide-horizontal 18s infinite;
+        }
+
+        .slider img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        @keyframes slide-horizontal {
+            0% { transform: translateX(0); }
+            33.33% { transform: translateX(-100%); }
+            66.66% { transform: translateX(-200%); }
+            100% { transform: translateX(0); }
+        }
+
+        .hover-box {
+            padding: 30px;
+            background-color: #f5e9dc;
+            border-radius: 12px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            cursor: pointer;
+            max-width: 600px;
+            margin: 20px auto;
+            font-size: 1.1em;
+        }
+
+        .hover-box:hover {
+            transform: scale(1.03);
+            background-color: #eedec7;
+        }
+
+        h2, h3 {
+            color: #5c4033;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .about-image {
+            display: block;
+            width: 360px;
+            border-radius: 15px;
+            margin: 30px auto;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+        }
+
+        .open-button {
+            display: inline-block;
+            padding: 14px 30px;
+            background-color: #c69c6d;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .open-button:hover {
+            background-color: #a8744f;
+        }
+
+        .cta-container {
+            text-align: center;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body class="aboutus-page">
+    <header class="menu small-menu">
+        <a href="index.html">Home</a>
+        <a href="AboutUs.html">About Us</a>
+        <a href="Customers.html">Customers</a>
+        <a href="Contact.html">Contact</a>
+        <a href="Slider.html">Slider</a>
+    </header>
+
+    <h2>Welcome to Beige Atelier</h2>
+
+    <div class="slider-container">
+  <div class="slider">
+    <img src="./slider/img1.jpg" alt="Image 1">
+    <img src="./slider/img2.jpg" alt="Image 2">
+    <img src="./slider/img3.jpg" alt="Image 3">
+    <!-- duplicadas para animación infinita suave -->
+    <img src="./slider/img1.jpg" alt="Image 1 repeat">
+    <img src="./slider/img2.jpg" alt="Image 2 repeat">
+    <img src="./slider/img3.jpg" alt="Image 3 repeat">
+  </div>
+</div>
+
+    <div class="hover-box">
+        At Beige Atelier, we blend natural elegance with artisanal detail—just like the perfect cup of coffee. Here, every client enjoys a unique experience, and every sip tells a story. Discover the finest coffee, crafted with purpose and passion.
+    </div>
+
+    <h3>Our Inspiration</h3>
+    <img src="./slider/img1.jpg" alt="Inspiration" class="about-image">
+
+    <div class="cta-container">
+        <a href="https://www.behance.net/" target="_blank" class="open-button">Explore our portfolio</a>
+    </div>
+</body>
+</html>

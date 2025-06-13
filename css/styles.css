@@ -1,0 +1,384 @@
+p {
+    color: burlywood;
+}
+
+img {
+    width: 100%;
+}
+
+
+form {
+  background-color: #f5f0e6; 
+  padding: 30px;
+  border-radius: 10px;
+  width: 60%;
+  margin: 40px auto;
+  box-shadow: 0 4px 10px rgba(90, 62, 54, 0.1); 
+  font-family: 'Segoe UI', sans-serif;
+}
+
+legend {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #5c4033; 
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group, .form-group-row {
+  margin-bottom: 20px;
+}
+
+.form-group-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #5c4033; 
+}
+
+input, textarea {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #a1887f; 
+  background-color: #fffaf3;
+  font-size: 1em;
+  color: #4e342e;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  background-color: #8d6e63; 
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1em;
+  border-radius: 6px;
+  cursor: pointer;
+  float: right;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #6d4c41; 
+}
+
+
+header{
+    text-align: center;
+    background-color: rgb(248, 244, 229);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: sans-serif;
+    font-size: 2em;
+    border-bottom: 2px solid #e0d7c5;
+}
+
+header nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #5a4e3c;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+header nav a:hover {
+  color: #a67c52;
+}
+
+.container {
+  background-color: rgb(248, 244, 229);
+  padding: 20px;
+  font-size: 20px;
+  font-family: sans-serif;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin: 0; 
+}
+
+
+.menu{
+ background-color: #e8d8c3; 
+  padding: 12px 20px;
+  font-weight: bold;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(44, 26, 26, 0.2);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+.menu a {
+  color: #5c4033;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.menu a:hover {
+  color: #5c4033; 
+  text-decoration: underline;
+  font-weight: bold; 
+  background-color: #f5e6d3;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.small-menu{
+  font-size: 15px;
+}
+
+nav {
+  background-color: #e8d8c3; 
+  padding: 10px 0;
+}
+
+nav a {
+  color: #5a3e36;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+nav a:hover {
+  background-color: #d9bfa3;
+  border-radius: 5px;
+}
+
+h2, h3 {
+  color: #7b5e57; 
+  margin-top: 30px;
+}
+
+p {
+  color: #5a3e36;
+  padding: 0 20px;
+  line-height: 1.6;
+}
+
+body {
+  margin:0;
+  text-align: center;
+}
+
+.hover-box {
+  background-color: #f4e3d7;
+  padding: 20px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.hover-box:hover {
+  background-color: #e1cfc0;
+}
+
+
+.slider {
+  width: 300px;
+  height: 200px;
+  margin: 20px auto;
+}
+
+.slider img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+h1 {
+  color: #5c4033;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 40px;
+}
+
+.slider-vertical-container {
+  width: 90%;
+  max-width: 400px;
+  height: 736px; 
+  overflow: hidden;
+  margin: 50px auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.slider-vertical {
+  display: flex;
+  flex-direction: column;
+  animation: slide-vertical-loop 18s linear infinite;
+}
+
+.slider-vertical img {
+  width: 100%;
+  height: 736px;
+  object-fit: cover;
+}
+
+@keyframes slide-vertical-loop {
+  0%   { transform: translateY(0); }
+  100% { transform: translateY(-2208px); } 
+}
+
+.hero {
+  position: relative;
+  background-color: #fdf8f3; 
+  padding: 80px 20px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  z-index: 1;
+}
+
+.hero::before {
+  content: "";
+  background-image: url('images/your-image.jpg'); 
+  background-size: cover;
+  background-position: center;
+  opacity: 0.15;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  border-radius: 20px;
+}
+
+.hero h1, .hero p, .hero .cta-button {
+  position: relative;
+  z-index: 2;
+}
+
+.cta-button {
+  background-color: #c69c6d; 
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #a8744f;
+}
+
+.customer-page .menu {
+  font-size: 14px;
+  padding: 8px 16px;
+  gap: 10px;
+}
+
+.customer-page .menu a {
+  font-size: 14px;
+  padding: 4px 10px;
+}
+
+.contact-page {
+  background-color: #f8f4e5;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.contact-page .container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 30px;
+  background-color: #fffaf3;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.aboutus-page {
+  background-color: #fdf8f3;
+  font-family: 'Segoe UI', sans-serif;
+  padding-bottom: 40px;
+}
+
+.aboutus-page h2, .aboutus-page h3 {
+  color: #7a5e44;
+  margin-top: 40px;
+  font-weight: bold;
+}
+
+.aboutus-page .slider-container {
+  width: 90%;
+  max-width: 600px;
+  overflow: hidden;
+  margin: 30px auto;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.aboutus-page .slider {
+  display: flex;
+  width: calc(5% * 6); 
+  animation: slide-horizontal 6s linear infinite;
+}
+
+.aboutus-page .slider img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  flex-shrink: 0; 
+}
+
+@keyframes slide-horizontal {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-300%); } 
+}
+
+.aboutus-page .hover-box {
+  background-color: #f5e4d0;
+  padding: 25px;
+  margin: 20px auto;
+  border-radius: 12px;
+  font-size: 18px;
+  max-width: 600px;
+  color: #5a3e36;
+  transition: all 0.3s ease;
+}
+
+.aboutus-page .hover-box:hover {
+  background-color: #e7d2b8;
+}
+
+.aboutus-page .featured-image {
+  width: 320px;
+  margin: 30px auto;
+  display: block;
+  border-radius: 15px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+}
+
+.aboutus-page .open-button {
+  background-color: #c69c6d;
+  color: white;
+  padding: 14px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.aboutus-page .open-button:hover {
+  background-color: #a8744f;
+}
